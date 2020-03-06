@@ -10,8 +10,8 @@
     font-style: normal;
 }
 html{
-	padding: 0px;
-	margin-top: 0px;
+	padding: 0%;
+	margin-top: 0%;
 	background-image: url(background.jpg);
 }
 body{
@@ -19,7 +19,7 @@ body{
 	margin: 5%;
 }
 i{
-	font-size: 25px;
+	font-size: 1em;
 	padding-right: 3%;
 }
 #conteneurs{
@@ -35,23 +35,23 @@ i{
 	background-color: #212121;
 	color: white;
 	word-wrap: break-word;
-	font-size: 15px;
+	font-size: 1.2em;
 	box-sizing: border-box;
 }
 img{
     webkit-border-radius:100%;
     moz-border-radius:100%;
     border-radius:100%;
-	width:200px;
-	height: 200px;
+	width:80%;
+	height: 80%;
 	margin: auto;
 	padding: 10%;
 }
 .contactTitle{
 	background-color: white;
 	color: #212121;
-	padding: 10px 0px 10px 0px;
-	font-size: 25px;
+	padding: 5% 0 5% 0;
+	font-size: 1.3em;
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -63,38 +63,42 @@ img{
 	padding: 5% 5% 50% 5%;
 }
 .hobbies{
-	font-size: 35px;
+	font-size: 1.7em;
 	padding: 5%;
 	text-align: center;
 }
-.conteneur2{
-	padding-left: 5%;
-	background-color: white;
-	font-size: 15px;
-	text-align: center;
-}
-h1{
+.conteneurTitre{
 	padding: 10% 0 10% 0;
-	font-size: 50px;
+	font-size: 1.7em;
+	margin: auto;
+	text-align: center;
+	background-color: white;
 }
 #sousTitre{
 	font-weight: normal;
-	font-size: 30px;
-	padding-top: 10px;
+	font-size: 0.7em;
+	padding-top: 5%;
 }
 #ligne{
-	border-bottom: 1px solid #4FC3F7;
+	border-bottom: 0.1em solid #4FC3F7;
 	width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 1%;
 }
 h3{
-	font-size: 18px;
-	margin-bottom: 10px;
+	font-size: 1.1em;
+	margin-bottom: 5%;
 	text-align: left;
 }
+.conteneur2{
+	padding: 5%;
+	background-color: white;
+	font-size: 1.1em;
+	text-align: center;
+}
+
 .parties{
 	color: black;
-	padding-left: 20px;
+	padding-left: 8%;
 }
 .paragraphe{
 	box-sizing: border-box;
@@ -108,7 +112,7 @@ section{
 	display: none;
 }
 .year, .etablissement{
-	font-size: 20px;
+	font-size: 1.2em;
 	text-decoration: underline;
 }
 
