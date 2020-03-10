@@ -55,17 +55,14 @@ img{
 	box-sizing: border-box;
 	text-align: center;
 }
-.contact{
+section, .contact, .hobbies{
+	font-size: 1.8em;
 	padding: 5%;
+	text-align: center;
 }
 .aboutMe{
 	text-align: justify;
 	padding: 5% 5% 50% 5%;
-}
-.hobbies{
-	font-size: 1.8em;
-	padding: 5%;
-	text-align: center;
 }
 .conteneurTitre1{
 	padding: 10% 0 10% 0;
@@ -105,10 +102,6 @@ h3{
 .paragraphe{
 	box-sizing: border-box;
 	padding-top: 2%;
-}
-section{
-	padding: 5%;
-	box-sizing: border-box;
 }
 .point{
 	display: none;
