@@ -10,7 +10,52 @@
     font-weight: normal;
     font-style: normal;
 }
+body{
+	width: 100%;
+	font-family: acme;
+	display: flex;
+	flex-direction: column;
+	color: black;
+	background-color: white;
+	word-wrap: break-word;
+}
+aside{
+	background-color: #212121;
+	color: white;
+	margin: auto;
+}
+aside h3{
+	background-color: white;
+	color: #212121;
+	font-size: 25px;
+}
+p{
+	padding: 5px;
+}
+img{
+    webkit-border-radius:100%;
+    moz-border-radius:100%;
+    border-radius:100%;
+	width: 25%;
+	height: 25%;
+}
+.container{
 
+}
+.identity1{
+	font-size: 25px;
+}
+.identity2{
+	display: none;
+}
+.studies{
+
+}
+.line{
+	border-bottom: 1px solid #4FC3F7;
+	width: 100%;
+	margin-left: 1%; 
+}
 @media screen and (mix-width: 576px){		
 
 }
@@ -20,5 +65,13 @@
 
 }
 @media(min-width: 1200px){
-
+	body{
+		flex-direction: row;
+	}
+	.identity1{
+		display: none;
+	}
+	.identity2{
+		display: flex;
+	}
 }
