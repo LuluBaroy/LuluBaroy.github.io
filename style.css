@@ -25,17 +25,25 @@ body{
 	box-sizing: border-box;
 	text-align: center;
 }
-#identity_mobile{
-	padding: 10% 10% 5% 10%;
+#identity_mobile, #identity_desktop{
+	padding: 117px 0 131px 0;
+	font-size: 45px;
+}
+h2, h3{
+	font-size: 20px;
+}
+i:not(tr i){
+	font-size: 32px;
 }
 #identity_desktop{
 	display: none;
+	text-align: left;
 }
-#identity_mobile h1 span, .container h3 i{
+#identity_mobile h1 span, #identity_desktop h1 span, .container h3 i{
 	color: #4FC3F7;
 	font-weight: bold;
 }
-#identity_mobile h2 span{
+#identity_mobile h2 span, #identity_desktop h2 span{
 	text-decoration: underline #4FC3F7;
 }
 aside{
@@ -45,9 +53,6 @@ aside{
 	font-size: 14px;
 }
 img{
-	border-radius:100%;
-	width: 200px;
-	height: 200px;
 	padding: 5%;
 }
 aside h3{
@@ -55,25 +60,33 @@ aside h3{
 	color: #212121;
 	font-size: 25px;
 	padding: 15px;
-	margin-bottom: 3%;
+}
+address{
+	height: 345px;
+	padding-top: 36px;
 }
 #about{
-	padding-bottom: 50%;
+	height: 730px;
+}
+#about p{
+	padding: 36px 50px 0 50px;
+}
+#hobbies{
+	height: 136px;
 }
 p{
-	font-size: 20px;
-	padding: 3%;
-	padding-top: 0;
+	padding-bottom: 18px;
+	font-size: 12px;
 }
 #hobbies ul, #recommends ul{
 	display: flex;
 	flex-direction: row;
-	font-size: 25px;
 	padding: 3%;
 	justify-content: center;
 }
 #recommends li{
-	padding-right: 5%;
+	padding: 30px 30px 38px 0;
+	font-size: 66px;
 	text-align: left;
 }
 #hobbies li{
@@ -83,7 +96,6 @@ p{
 }
 .container{
 	width: 100%;
-	word-break: break-word;
 }
 .container h3{
 	font-size: 24px;
@@ -93,12 +105,12 @@ p{
 }
 hr{
 	border-color: #4FC3F7;
-	margin-left: 2%;
-	margin-top: 16px;
-	margin-bottom: 50px;
+	width: 95%;
+	margin: 16px 0 50px 0;
 }
 strong{
 	font-weight: bold;
+	font-size: 15px;
 }
 td:first-child{
 	display: none;
@@ -106,26 +118,25 @@ td:first-child{
 tr{
 	display: flex;
 	flex-direction: column;
-	flex: 1;
 	padding: 0% 3% 3% 3%;
 }
 
 /*Mobile Landscape and Tablet Portrait*/
 @media screen and (min-width: 577px){
+	.container{
+		text-align: left;
+	}
 	td:first-child{
 		display: flex;
-		flex: 0;
 	}
 	tr{
 		flex-direction: row;
-		text-align: left;
 	}
-	#studies td:nth-child(1), #work td:nth-child(1){
-		width: 30%;
-		font-size: 20px;
+	td:nth-child(2){
+		flex: 0 0 30%;
 	}
-	#studies td:nth-child(2), #work td:nth-child(2){
-		width: 70%;
+	td:last-child{
+		flex: 0 0 65%;
 	}
 	#recommends li{
 		padding-right: 18%;
@@ -142,30 +153,13 @@ tr{
 	}
 	#identity_desktop{
 		display: flex;
-		font-size: 22px;
-		padding: 120px 0 145px 0;
-		flex-direction: row;
+		flex-direction: column;
 	}
 	aside{
 		width: 40%;
 	}
-	#contact p, #about p{
-		padding: 5%;
-	}
-	#about{
-		padding-bottom: 110%;
-	}
-	img{
-		width: 150px;
-		height: 150px;
-	}
 	.container{
-		width: 60%;
-		text-align: left;
-		padding-left: 3%;
-	}
-	p{
-		font-size: 18px;
+		padding-left: 65px;
 	}
 	#recommends li{
 		padding-right: 5%;
@@ -180,22 +174,11 @@ tr{
 	.container{
 		width: 70%;
 	}
-	img{
-		width: 220px;
-		height: 220px;
-		padding: 45px;
-	}
 	#identity_desktop{
 		padding: 15% 0 15% 0;
 	}
-	#about{
-		padding-bottom: 50%;
-	}
 	#hobbies li{
 		font-size: 30px;
-	}
-	#studies, #work{
-		padding-bottom: 55px;
 	}
 	#recommends li{
 		padding-right: 25%;
@@ -209,10 +192,7 @@ tr{
 		height: 1685px;
 		margin: auto;
 	}
-	#about{
-		padding-bottom: 155%;
-	}
-	#identity_desktop{
-		padding-right: 25%;
+	aside{
+		width: 385px;
 	}
 }
