@@ -81,12 +81,15 @@ p{
 #hobbies ul, #recommends ul{
 	display: flex;
 	flex-direction: row;
-	padding: 3%;
+	padding: 2%;
 	justify-content: center;
 }
 #recommends li{
-	padding: 0px 30px 38px 0;
+	padding-right: 30px;
 	text-align: left;
+}
+#recommends br{
+	margin-bottom: 4%;
 }
 #hobbies li{
 	align-items: center;
@@ -97,7 +100,7 @@ p{
 	width: 100%;
 }
 .container h3{
-	font-size: 24px;
+	font-size: 28px;
 	font-weight: bold;
 	text-align: left;
 	padding-top: 5%;
@@ -206,7 +209,13 @@ tr{
 		height: 1685px;
 		margin: auto;
 	}
-	aside{
-		width: 385px;
+	#about{
+		padding-bottom: 20%;
+	}
+	#recommends ul{
+		padding-top: 0;
+	}
+	#recommends hr{
+		margin-bottom: 4%;
 	}
 }
