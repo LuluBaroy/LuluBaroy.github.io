@@ -25,6 +25,9 @@ body{
 	box-sizing: border-box;
 	text-align: center;
 }
+.text-left{
+	text-align: left;
+}
 #identity_mobile, #identity_desktop{
 	padding: 117px 0 131px 0;
 	font-size: 45px;
@@ -38,7 +41,6 @@ h3 i{
 }
 #identity_desktop{
 	display: none;
-	text-align: left;
 }
 #identity_mobile h1 span, #identity_desktop h1 span, .container h3 i{
 	color: #4FC3F7;
@@ -86,7 +88,6 @@ p{
 }
 #recommends li{
 	padding-right: 30px;
-	text-align: left;
 }
 #recommends br{
 	margin-bottom: 4%;
@@ -102,7 +103,6 @@ p{
 .container h3{
 	font-size: 28px;
 	font-weight: bold;
-	text-align: left;
 	padding-top: 5%;
 }
 hr{
