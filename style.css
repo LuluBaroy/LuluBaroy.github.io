@@ -1,13 +1,13 @@
 /*Mobile First*/
 @font-face {
-    font-family: 'acme';
-    src: url('Acme-Regular-webfont.eot');
-    src: url('Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Acme-Regular-webfont.woff') format('woff'),
-         url('Acme-Regular-webfont.ttf') format('truetype'),
-         url('Acme-Regular-webfont.svg#acmeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'acme';
+	src: url('Acme-Regular-webfont.eot');
+	src: url('Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('Acme-Regular-webfont.woff') format('woff'),
+	url('Acme-Regular-webfont.ttf') format('truetype'),
+	url('Acme-Regular-webfont.svg#acmeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 html{
 	padding: 0%;
@@ -23,10 +23,16 @@ body{
 	background-color: white;
 	word-wrap: break-word;
 	box-sizing: border-box;
-	text-align: center;
+	text-align:center;
+}
+.text-center{
+	text-align:center;
+}
+.text-left{
+	text-align: left;
 }
 #identity_mobile, #identity_desktop{
-	padding: 117px 0 131px 0;
+	padding: 80px 10px 80px 10px;
 	font-size: 45px;
 }
 h2, h3{
@@ -38,7 +44,6 @@ h3 i{
 }
 #identity_desktop{
 	display: none;
-	text-align: left;
 }
 #identity_mobile h1 span, #identity_desktop h1 span, .container h3 i{
 	color: #4FC3F7;
@@ -62,14 +67,11 @@ aside h3{
 	padding: 15px;
 }
 address{
-	height: 345px;
 	padding-top: 36px;
 }
-#about{
-	height: 730px;
-}
+
 #about p{
-	padding: 36px 50px 0 50px;
+	padding: 36px 50px 36px 50px;
 }
 #hobbies{
 	height: 136px;
@@ -86,7 +88,6 @@ p{
 }
 #recommends li{
 	padding-right: 30px;
-	text-align: left;
 }
 #recommends br{
 	margin-bottom: 4%;
@@ -102,7 +103,6 @@ p{
 .container h3{
 	font-size: 28px;
 	font-weight: bold;
-	text-align: left;
 	padding-top: 5%;
 }
 hr{
@@ -134,6 +134,10 @@ tr{
 	.container{
 		text-align: left;
 	}
+
+	td i{
+		margin-right: 10px;
+	}
 	td:first-child{
 		display: flex;
 	}
@@ -158,6 +162,7 @@ tr{
 @media screen and (min-width: 768px){
 	body{
 		flex-direction: row;
+		text-align:left;
 	}
 	#identity_mobile{
 		display: none;
@@ -167,13 +172,23 @@ tr{
 		flex-direction: column;
 	}
 	aside{
-		width: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 0 0 40%;
+		text-align:left !important;
 	}
-	#about{
-		padding-bottom: 75%;
+
+	aside img{
+		object-fit: scale-down;
+	}
+
+	#hobbies{
+		margin-top:auto;
 	}
 	.container{
-		padding-left: 65px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 	#recommends li{
 		padding-right: 10%;
@@ -187,12 +202,11 @@ tr{
 	}
 	.container{
 		width: 70%;
+		padding-left: 50px;
+		padding-right: 40px;
 	}
 	#identity_desktop{
 		padding: 15% 0 15% 0;
-	}
-	#about{
-		padding-bottom: 45%;
 	}
 	#hobbies li{
 		font-size: 30px;
@@ -208,9 +222,6 @@ tr{
 		width: 1190px;
 		height: 1685px;
 		margin: auto;
-	}
-	#about{
-		padding-bottom: 20%;
 	}
 	#recommends ul{
 		padding-top: 0;
