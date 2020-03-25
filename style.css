@@ -53,7 +53,7 @@ aside{
 	width: 100%;
 }
 img{
-	padding: 5%;
+	padding: 10%;
 }
 aside h3{
 	background-color: white;
@@ -167,7 +167,7 @@ tr{
 		width: 40%;
 	}
 	#about{
-		padding-bottom: 85%;
+		padding-bottom: 75%;
 	}
 	.container{
 		padding-left: 65px;
@@ -188,11 +188,14 @@ tr{
 	#identity_desktop{
 		padding: 15% 0 15% 0;
 	}
+	#about{
+		padding-bottom: 45%;
+	}
 	#hobbies li{
 		font-size: 30px;
 	}
 	#recommends li{
-		padding-right: 25%;
+		padding-right: 20%;
 	}
 }
 
