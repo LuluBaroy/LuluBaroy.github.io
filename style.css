@@ -166,11 +166,14 @@ tr{
 	aside{
 		width: 40%;
 	}
+	#about{
+		padding-bottom: 85%;
+	}
 	.container{
 		padding-left: 65px;
 	}
 	#recommends li{
-		padding-right: 5%;
+		padding-right: 10%;
 	}
 }
 
