@@ -45,9 +45,8 @@ h3 i{
 #identity_desktop{
 	display: none;
 }
-#identity_mobile h1 span, #identity_desktop h1 span, .container h3 i{
+#identity_mobile h1 span, #identity_desktop h1 span, .container i{
 	color: #4FC3F7;
-	font-weight: bold;
 }
 #identity_mobile h2 span, #identity_desktop h2 span{
 	text-decoration: underline #4FC3F7;
