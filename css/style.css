@@ -24,17 +24,13 @@ body{
 	word-wrap: break-word;
 	box-sizing: border-box;
 	text-align:center;
+	box-shadow: 6px -6px 8px black;
 }
 #identity_mobile, #identity_desktop{
-	padding: 20px;
 	font-size: 45px;
 }
 h2, h3{
 	font-size: 20px;
-}
-h3 i{
-	font-size: 32px;
-	margin: 0 10px 0 10px;
 }
 #identity_desktop{
 	display: none;
@@ -50,8 +46,13 @@ aside{
 	color: white;
 	width: 100%;
 }
-aside img{
+.padding10{
 	padding: 10%;
+}
+.padding20{
+	padding: 20px;
+}
+aside img{
 	box-sizing: border-box;
 	object-fit: scale-down;
 	max-width: 100%;
@@ -62,11 +63,14 @@ aside h3{
 	font-size: 25px;
 	padding: 15px;
 }
+h3 i{
+	font-size: 32px;
+	margin: 0 10px 0 10px;
+}
 address{
 	padding-top: 36px;
 }
 #about p{
-	padding: 10%;
 	text-align: justify;
 }
 p{
@@ -76,14 +80,12 @@ p{
 #hobbies ul{
 	display: flex;
 	flex-direction: row;
-	padding: 2%;
 	flex-wrap: wrap;
 	justify-content: center;
-
 }
 #recommends li{
 	display: flex;
-	padding-bottom: 15px;
+	padding-bottom: 18px;
 	justify-content: center;
 }
 #recommends br{
@@ -137,11 +139,9 @@ tr{
 	tr{
 		flex-direction: row;
 	}
-	td i{
-		margin-right: 10px;
-	}
 	td:first-child{
 		display: flex;
+		margin-right: 10px;
 	}
 	td:nth-child(2){
 		flex: 0 0 30%;
@@ -158,7 +158,6 @@ tr{
 @media screen and (min-width: 768px){
 	body{
 		flex-direction: row;
-		text-align:left;
 	}
 	#identity_mobile{
 		display: none;
@@ -166,35 +165,48 @@ tr{
 	#identity_desktop{
 		display: flex;
 		flex-direction: column;
-		padding: 20% 0 20% 0;
+		padding: 20% 0 15% 0;
 	}
 	aside{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		flex: 0 0 40%;
-		text-align: center;
 	}
-	#contact p{
+	address{
 		text-align:left !important;
-		padding-left: 5%;
+		padding: 11%;
 	}
 	#hobbies{
 		margin-top:auto;
 	}
 	.container{
-		padding-left: 3%;
-		padding-right: 3%;
+		padding: 0 3% 0 3%;
+	}
+	#recommends ul{
+		padding-right: 15%;
 	}
 }
 
 /*Computer screen*/
 @media screen and (min-width: 992px){
 	aside{
-		width: 30%;
+		flex: 0 0 30%;
 	}
 	.container{
-		width: 70%;
+		flex: 0 0 70%;
+		padding: 0 3% 0 5%;
+		box-sizing: border-box;
+	}
+	#identity_desktop{
+		font-size: 55px;
+		padding: 124px 0 100px 0;
+	}
+	h2{
+		font-size: 25px;
+	}
+	table strong{
+		font-size: 20px;
 	}
 }
 
